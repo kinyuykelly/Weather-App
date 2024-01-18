@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherApp</title>
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
    <div class="container">
-    <h1>Welcome to my weather app</h1>
+    <form action="" class="input-form">
+      <input type="text" class="city-input" placeholder="Enter a city...">
+      <button type="submit" class="search-btn">search</button>
+    </form>
+  <div class="current-weather-forecast">
+   <div class="current-weather-forecast-left">
+    <h1 class="current-city">Bambili</h1>
+    <p><span class="current-date">Tuesday 7:30,</span> <span class="current-description">cloudy</span></p>
+    <p><span class="current-humidity">Humidity: 18%</span> <span class="current-wind">Wind: 40km/h</span></p>
+   </div>
+   <div class="current-weather-forecast-right">
+    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" class="current-cloud-icon" alt="cloud">
+         <span class="current-temperature">19</span><span class="current-temperature-unit">&deg;C</span>
+        </div>
+  </div>
+  <div class="weather-forecast-days">
+<p class="weather-forecast-day">
+</p>
+<img src="" class="weather-forecast-day-icon" alt="cloud-icon">
+<p class="weather-forecast-temperature"><span class="weather-forecast-temperature-max"></span>
+  <span class="weather-forecast-temperature-min"></span></p>
+  </div>
     <footer>
         <p>
           This project was coded by
@@ -17,5 +39,6 @@
         </p>
       </footer>
    </div> 
+   <script src="src/index.js"></script>
 </body>
 </html>
