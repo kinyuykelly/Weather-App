@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherApp</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
    <div class="container">
-    <form action="" class="input-form">
-      <input type="text" class="city-input" placeholder="Enter a city...">
+    <form action="" class="search-form">
+      <input type="search" class="search-input" placeholder="Enter a city...">
       <button type="submit" class="search-btn">search</button>
     </form>
   <div class="current-weather-forecast">
@@ -19,23 +20,22 @@
     <p><span class="current-humidity">Humidity: 18%</span> <span class="current-wind">Wind: 40km/h</span></p>
    </div>
    <div class="current-weather-forecast-right">
-    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" class="current-cloud-icon" alt="cloud">
+    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" class="cloud-icon" alt="cloud">
          <span class="current-temperature">19</span><span class="current-temperature-unit">&deg;C</span>
         </div>
   </div>
-  <div class="weather-forecast-days">
+  <!-- <div class="weather-forecast-days">
 <p class="weather-forecast-day">
 </p>
 <img src="" class="weather-forecast-day-icon" alt="cloud-icon">
 <p class="weather-forecast-temperature"><span class="weather-forecast-temperature-max"></span>
   <span class="weather-forecast-temperature-min"></span></p>
-  </div>
+  </div> -->
     <footer>
         <p>
-          This project was coded by
-          <a href="https://github.com/Kinyuykelly" target="_blank">Kinyuy Kelly</a> and is
-          <a href="https://github.com/Kinyuykelly/Weather-App" target="_blank"> on GitHub</a> and
-          <a href="https://weather-app-kb.netlify.app" target="_blank">hosted on Netlify</a>
+          Code by
+          <a href="https://github.com/Kinyuykelly" target="_blank">Kinyuy Kelly</a>and open-sourced
+          <a href="https://github.com/Kinyuykelly/Weather-App" target="_blank"> on GitHub</a>
         </p>
       </footer>
    </div> 
