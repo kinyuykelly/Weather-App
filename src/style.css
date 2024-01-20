@@ -75,7 +75,6 @@ div.current-weather p{
 .current-weather-right{
     display: flex;
     flex-direction: row;
-    position: relative;
     
 }
 .current-city{
