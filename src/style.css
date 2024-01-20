@@ -75,27 +75,31 @@ div.current-weather p{
 .current-weather-right{
     display: flex;
     flex-direction: row;
-    position: relative;  
+    position: relative;
+    
 }
 .current-city{
     font-weight: 400;
 }
-.current-temperature{
+ .current-temperature{
     font-size: 80px;
-    font-weight: 600;
+    font-weight: 500;
     color: #FFFFFF;
+   
 }
-.cloud-icon{
+ .cloud-icon{
     height: 80px;
     width: 80px;
-}
+} 
 .search-form, div.current-weather{
     margin: 30px 0;
 }
 .current-temperature-unit{
     font-weight: 400;
     font-size: 20px;
-}
+    position: relative;
+    top: -50px;
+} 
 .weather-forecast-day{
     width: 80px;
     display: flex;
