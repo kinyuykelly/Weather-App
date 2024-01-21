@@ -15,8 +15,7 @@ body{
     background: linear-gradient(#849BC7, #E1BEC3);
 }
 .container{
-   width: 50%;
-   /* height: 600px; */
+   width: 35%;
    padding: 30px;
    background:url("/images/bg-image.jpeg");
    background-repeat: no-repeat;
@@ -100,15 +99,17 @@ div.current-weather p{
     top: -50px;
 } 
 .weather-forecast-day{
-    width: 80px;
+    width: 85px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
     text-align: center;
     padding: 10px;
-   border: 1px solid #F5ECEE;
-   border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+   border: 0.1px solid rgba(245, 236, 238, 0.2);
+   ;
+   border-radius: 8px;
 }
 .weather-forecast-days{
     display: flex;
@@ -125,6 +126,8 @@ div.current-weather p{
 .weather-forecast-icon{
     height: 50px;
     width: 50px;
+    display: block;
+    margin: auto;
 }
 footer{
     text-align: center;
@@ -144,11 +147,26 @@ a:hover{
         width: 100%;
         height: 100%;
         padding: 15px;
-        border-radius: 0px;
-        
+        border-radius: 0px; 
     }
     .current-weather{
         margin: 12px 0;
+    }
+    .cloud-icon{
+        display: inline;
+        margin: auto;
+    }
+    .weather-forecast-icon{
+        display: block;
+        margin: 0 auto;
+    }
+    .current-temperature-unit{
+     top: -25px;
+    }
+    .current-weather-forecast-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .current-weather-forecast{
         flex-direction: column;
@@ -156,8 +174,10 @@ a:hover{
     .weather-forecast-days{
         flex-direction: column;
         margin: 15px 0;
-        gap: 8px;
-       
+        gap: 8px;  
+    }
+    .weather-forecast-temperatures{
+        gap: 10px;
     }
     .weather-forecast-day{
         flex-direction: row;
