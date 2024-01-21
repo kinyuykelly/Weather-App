@@ -73,8 +73,7 @@ div.current-weather p{
 }
 .current-weather-right{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row; 
 }
 .current-city{
     font-weight: 400;
@@ -83,20 +82,19 @@ div.current-weather p{
     font-size: 80px;
     font-weight: 500;
     color: #FFFFFF;
-   
 }
  .cloud-icon{
-    height: 80px;
-    width: 80px;
+    height: 85px;
+    width: 85px;
 } 
 .search-form, div.current-weather{
     margin: 30px 0;
 }
-.current-temperature-unit{
+#current-temperature-unit{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 28px;
     position: relative;
-    top: -50px;
+    top: -14px;
 } 
 .weather-forecast-day{
     width: 85px;
@@ -108,7 +106,6 @@ div.current-weather p{
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.2);
    border: 0.1px solid rgba(245, 236, 238, 0.2);
-   ;
    border-radius: 8px;
 }
 .weather-forecast-days{
@@ -116,7 +113,6 @@ div.current-weather p{
     flex-direction: row;
     justify-content: space-between;
     margin: 50px 0;
-
 }
 .weather-forecast-temperatures{
     display: flex;
@@ -156,17 +152,15 @@ a:hover{
         display: inline;
         margin: auto;
     }
+    #current-temperature-unit{
+        top: 20px;
+    } 
     .weather-forecast-icon{
+        margin: auto;
+    }
+    .current-temperature{
         display: block;
-        margin: 0 auto;
-    }
-    .current-temperature-unit{
-     top: -25px;
-    }
-    .current-weather-forecast-right{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: auto;
     }
     .current-weather-forecast{
         flex-direction: column;
@@ -186,5 +180,4 @@ a:hover{
         justify-content: center;
         align-items: center;
     }
-    
  }
