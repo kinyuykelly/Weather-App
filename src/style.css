@@ -112,7 +112,7 @@ div.current-weather p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: 35px 0;
 }
 .weather-forecast-temperatures{
     display: flex;
