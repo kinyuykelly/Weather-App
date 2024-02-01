@@ -16,7 +16,7 @@ body{
 }
 .container{
    width: 35%;
-   min-width: 640px;
+   min-width:480px;
    padding: 30px;
    background:url("/images/bg-image.jpeg");
    background-repeat: no-repeat;
@@ -51,6 +51,7 @@ input:focus{
     color: #FFFFFF;
     border-radius: 10px;
     padding: 12px 6px;
+    transition: all 200ms ease;
 }
 .search-btn:hover{
     border: 1px solid #ea9e91;
@@ -139,14 +140,14 @@ a:hover{
     cursor: pointer;
     text-decoration: underline;
 }
-@media only screen and (max-width: 640px) {
-    .container{
+@media only screen and (max-width: 480px) {
+    /* .container{
         width: 100%;
         height: 100%;
-        padding: 15px;
+        padding: 40px;
         border-radius: 0px;
-    }
-    .current-weather{
+    } */
+    /* .current-weather{
         margin: 12px 0;
     }
     .cloud-icon{
@@ -180,5 +181,5 @@ a:hover{
         height: 60px;
         justify-content: center;
         align-items: center;
-    }
+    } */
  }
