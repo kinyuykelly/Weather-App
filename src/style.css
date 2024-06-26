@@ -12,12 +12,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     color: #FFFFFF;
-    background: linear-gradient(#849BC7, #E1BEC3);
+    background: linear-gradient(#849BC7, #E1BEC3)no-repeat;
 }
 .container{
-   width: 35%;
-   min-width:480px;
-   padding: 30px;
+   padding: 15px;
    background:url("/images/bg-image.jpeg");
    background-repeat: no-repeat;
    background-position: center;
@@ -33,7 +31,7 @@ form{
 }
 input{
     width: 80%;
-    padding: 15px 20px;
+    padding: 0 15px;
     background-color: #F5ECEE;
     border: none;
     border-radius: 10px;
@@ -46,16 +44,16 @@ input:focus{
 .search-btn{
     width: 17%;
     font-size: 16px;
-    border: 1px solid #5165A4;
-    background: #5165A4;
+    border: 1px solid #ea9e91;
+    background: #ea9e91;
     color: #FFFFFF;
     border-radius: 10px;
     padding: 12px 6px;
     transition: all 200ms ease;
 }
 .search-btn:hover{
-    border: 1px solid #ea9e91;
-    background: #ea9e91;
+    border: 1px solid #5165A4;
+    background: #5165A4;
     color: #FFFFFF;
     padding: 12px 6px;
 }
@@ -99,11 +97,10 @@ div.current-weather p{
     top: -14px;
 } 
 .weather-forecast-day{
-    width: 85px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
     text-align: center;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -114,12 +111,12 @@ div.current-weather p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 35px 0;
 }
 .weather-forecast-temperatures{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 13px;
 }
 .weather-forecast-icon{
     height: 50px;
@@ -140,46 +137,3 @@ a:hover{
     cursor: pointer;
     text-decoration: underline;
 }
-@media only screen and (max-width: 480px) {
-    /* .container{
-        width: 100%;
-        height: 100%;
-        padding: 40px;
-        border-radius: 0px;
-    } */
-    /* .current-weather{
-        margin: 12px 0;
-    }
-    .cloud-icon{
-        display: inline;
-        margin: auto;
-    }
-    #current-temperature-unit{
-        top: 20px;
-    } 
-    .weather-forecast-icon{
-        margin: auto;
-    }
-    .current-temperature{
-        display: block;
-        margin: auto;
-    }
-    .current-weather-forecast{
-        flex-direction: column;
-    }
-    .weather-forecast-days{
-        flex-direction: column;
-        margin: 15px 0;
-        gap: 8px;  
-    }
-    .weather-forecast-temperatures{
-        gap: 10px;
-    }
-    .weather-forecast-day{
-        flex-direction: row;
-        width: 100%;
-        height: 60px;
-        justify-content: center;
-        align-items: center;
-    } */
- }
